@@ -1,0 +1,17 @@
+no= int(input("¿What number do you think that is prime?"))  
+#First the costume have to introduce his number     
+
+lista = 0                                             
+for i in range(2,no) :                                           
+  if no % i == 0:
+    lista =+1
+    print(f'{no} divided by {i} ')
+#after that we take a value range from 2 to the number that we have taken
+#and we devide this value to our number 
+
+if lista > 0 :                                         
+  print("¡ALMOST! TRY AGAIN" )
+else:
+  print("¡NICE, YOU NUMBER IS PRIME!     ;)")
+#If the value that we got from the devide is a number witout decimal, or decimal 0, is a non prime number; because it can be devided by other number that isnt the same or 1.
+#If the number can't be divided by a number in this range, we say that is prime. Because it only can be divided by itself and 1.
